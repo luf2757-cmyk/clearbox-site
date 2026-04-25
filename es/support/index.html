@@ -5,80 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Support - ClearBox</title>
   <style>
-    body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif; max-width: 980px; margin: 36px auto; padding: 0 16px; line-height: 1.72; color: #111827; }
+    body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif; max-width: 1020px; margin: 32px auto; padding: 0 16px; line-height: 1.72; color: #111827; }
     h1,h2,h3 { color: #0f172a; }
-    h1 { margin-bottom: 6px; }
+    h1 { margin-bottom: 8px; }
     h2 { margin-top: 30px; }
     .meta { color: #475569; font-size: 14px; }
-    code { background: #f1f5f9; padding: 2px 6px; border-radius: 6px; }
-    a { color: #0a66ff; }
-    .card { background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:14px; }
+    .faq { background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:12px 14px; margin-bottom:12px; }
+    code { background:#f1f5f9; padding:2px 6px; border-radius:6px; }
+    a { color:#0a66ff; }
   </style>
 </head>
 <body>
   <h1>Support Center</h1>
-  <p class="meta">ClearBox · Customer Support and Troubleshooting</p>
+  <p class="meta">ClearBox Support · Subscription, cleanup, and account help</p>
 
   <p>
-    We’re here to help with subscriptions, restore flow, cleanup issues, permissions, and quality feedback.
+    If you experience issues with subscriptions, restore flow, cleanup behavior, permissions, or app stability,
+    use the channels below and include diagnostic details to speed up support.
   </p>
 
   <h2>1. Contact Channels</h2>
   <ul>
     <li>General support: <a href="mailto:support@clearbox.app">support@clearbox.app</a></li>
-    <li>Subscription issues: <a href="mailto:billing@clearbox.app">billing@clearbox.app</a></li>
-    <li>Privacy concerns: <a href="mailto:privacy@clearbox.app">privacy@clearbox.app</a></li>
+    <li>Billing/subscription: <a href="mailto:billing@clearbox.app">billing@clearbox.app</a></li>
+    <li>Privacy requests: <a href="mailto:privacy@clearbox.app">privacy@clearbox.app</a></li>
   </ul>
 
-  <h2>2. Before You Contact Us</h2>
-  <p>Please include the following to speed up resolution:</p>
+  <h2>2. Information to Include</h2>
   <ul>
-    <li>App version</li>
-    <li>iOS version</li>
-    <li>Device model</li>
-    <li>User ID (from Settings)</li>
-    <li>Repro steps and expected vs. actual behavior</li>
-    <li>Screenshots/screen recording (if possible)</li>
+    <li>App version and iOS version</li>
+    <li>Device model (e.g. iPhone 15 Pro)</li>
+    <li>User ID shown in app Settings</li>
+    <li>Problem summary and expected behavior</li>
+    <li>Steps to reproduce and frequency</li>
+    <li>Screenshots / screen recordings</li>
   </ul>
 
   <h2>3. Subscription FAQ</h2>
-  <div class="card">
-    <h3>Q: Purchase succeeded but Pro not unlocked</h3>
-    <p>A: Open app Settings and use <strong>Restore Purchases</strong>. If still unresolved, send receipt screenshot + Apple account region.</p>
-
-    <h3>Q: How do I cancel auto-renewal?</h3>
-    <p>A: Manage via Apple subscription settings. The current paid period remains active until end date.</p>
-
-    <h3>Q: How do I request a refund?</h3>
-    <p>A: Apple handles refunds at <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>.</p>
+  <div class="faq">
+    <h3>Purchase succeeded but Pro not unlocked</h3>
+    <p>Use <strong>Restore Purchases</strong> in Settings. If unresolved, send purchase timestamp and storefront region.</p>
+  </div>
+  <div class="faq">
+    <h3>How to cancel auto-renewal?</h3>
+    <p>Manage subscriptions via Apple settings. Cancellation takes effect at end of the current paid period.</p>
+  </div>
+  <div class="faq">
+    <h3>How to request a refund?</h3>
+    <p>Refunds are managed by Apple at <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>.</p>
   </div>
 
-  <h2>4. Permission and Cleanup FAQ</h2>
-  <div class="card">
-    <h3>Q: Cleanup button has no effect</h3>
-    <p>A: Confirm category entitlement (Pro gating), item selection count, and Photos write permission.</p>
-
-    <h3>Q: Why are no candidates shown?</h3>
-    <p>A: Re-run scan and verify Photos/Contacts/Calendar permissions are granted.</p>
-
-    <h3>Q: Can deleted photos be recovered?</h3>
-    <p>A: iOS usually moves deletions to “Recently Deleted” first; retention is controlled by system rules.</p>
+  <h2>4. Cleanup FAQ</h2>
+  <div class="faq">
+    <h3>"Clean selected" has no visible effect</h3>
+    <p>Check: (1) selected count is not zero, (2) category is unlocked for your plan, (3) Photos write permission is granted.</p>
+  </div>
+  <div class="faq">
+    <h3>Scan results look incomplete</h3>
+    <p>Re-run scan after permission refresh. Large media indexing can vary by device state and library sync progress.</p>
+  </div>
+  <div class="faq">
+    <h3>Can deleted photos be recovered?</h3>
+    <p>In many cases iOS moves media to "Recently Deleted" first. Final recovery depends on iOS retention rules.</p>
   </div>
 
-  <h2>5. Response Time</h2>
+  <h2>5. Response Time and SLA</h2>
   <p>
-    Typical response time is 1–3 business days. Complex billing or platform issues may require additional verification.
+    Typical initial response: 1–3 business days. Complex billing/platform incidents may require longer investigation.
   </p>
 
   <h2>6. Security Notice</h2>
   <p>
-    Never send passwords, full payment card numbers, or private passcodes in support emails.
+    Do not send passwords, full card numbers, verification codes, or private passkeys in support emails.
   </p>
 
-  <h2>7. App Store Links</h2>
+  <h2>7. Useful Links</h2>
   <ul>
-    <li>Write a review: <a href="https://apps.apple.com/app/id6743054609">App Store page</a></li>
-    <li>Subscription management: <a href="https://support.apple.com/zh-cn/HT202039">Apple guide</a></li>
+    <li>App Store app page: <a href="https://apps.apple.com/app/id6743054609">https://apps.apple.com/app/id6743054609</a></li>
+    <li>Apple subscription management: <a href="https://support.apple.com/zh-cn/HT202039">Apple guide</a></li>
+    <li>Apple refund portal: <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a></li>
   </ul>
 </body>
 </html>
